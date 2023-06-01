@@ -2,8 +2,8 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "singularName": "product",
-    "pluralName": "products",
+    "singularName": "maleproduct",
+    "pluralName": "maleproducts",
     "displayName": "maleproduct",
     "description": ""
   },
@@ -25,12 +25,7 @@
       "type": "media",
       "multiple": true,
       "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "upperDetailing": {
       "type": "richtext"
