@@ -1,6 +1,6 @@
 {
   "kind": "collectionType",
-  "collectionName": "products",
+  "collectionName": "maleproducts",
   "info": {
     "singularName": "maleproduct",
     "pluralName": "maleproducts",
