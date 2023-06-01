@@ -1,0 +1,141 @@
+{
+  "kind": "collectionType",
+  "collectionName": "femaleproducts",
+  "info": {
+    "singularName": "femaleproduct",
+    "pluralName": "femaleproducts",
+    "displayName": "femaleproduct",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "upperDetailing": {
+      "type": "richtext"
+    },
+    "internalDetailing": {
+      "type": "richtext"
+    },
+    "soleDetailing": {
+      "type": "richtext"
+    },
+    "keyProductFeature": {
+      "type": "richtext"
+    },
+    "sizeGuideAndFittings": {
+      "type": "richtext"
+    },
+    "shipping": {
+      "type": "richtext"
+    },
+    "fitGuarantee": {
+      "type": "richtext"
+    },
+    "onlineExclusive": {
+      "type": "boolean"
+    },
+    "typeOf": {
+      "type": "enumeration",
+      "enum": [
+        "womensarrival",
+        "shoes",
+        "slippers",
+        "heels",
+        "sandals",
+        "sneakers",
+        "boots"
+      ]
+    },
+    "shoeType": {
+      "type": "enumeration",
+      "enum": [
+        "chelseaboots",
+        "hikingboots",
+        "laceupboots",
+        "ankleboots",
+        "kneehighboots",
+        "muleloafers",
+        "pennyloafers",
+        "saddleloafers",
+        "trimloafers",
+        "boulevard",
+        "valley",
+        "slippers",
+        "heels",
+        "chunkysandals",
+        "espadrilles",
+        "flatsandals",
+        "anklestrapsandals",
+        "onestrapsandals",
+        "twostrapsandals",
+        "thongsandals",
+        "apronshoes",
+        "derbyshoes"
+      ]
+    },
+    "discounted": {
+      "type": "boolean",
+      "default": false
+    },
+    "outlet": {
+      "type": "boolean",
+      "default": false
+    },
+    "collection": {
+      "type": "enumeration",
+      "enum": [
+        "Bella",
+        "Clara",
+        "Club",
+        "Copenhagen",
+        "Garda",
+        "Lily",
+        "Maisy",
+        "Milan",
+        "Olso",
+        "Oslo",
+        "Roxy",
+        "Stockholm"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "black",
+        "hot pink",
+        "off-white",
+        "sand",
+        "white",
+        "vermillion orange"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "femaleproducts"
+    }
+  }
+}

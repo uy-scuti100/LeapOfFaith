@@ -1,0 +1,160 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "maleproduct",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "desc": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "upperDetailing": {
+      "type": "richtext"
+    },
+    "internalDetailing": {
+      "type": "richtext"
+    },
+    "soleDetailing": {
+      "type": "richtext"
+    },
+    "keyProductFeatures": {
+      "type": "richtext"
+    },
+    "sizeGuideAndFittings": {
+      "type": "richtext"
+    },
+    "shipping": {
+      "type": "richtext"
+    },
+    "fitGuarantee": {
+      "type": "richtext"
+    },
+    "onlineExclusive": {
+      "type": "boolean",
+      "default": false
+    },
+    "typeOf": {
+      "type": "enumeration",
+      "enum": [
+        "springsummer23",
+        "boots",
+        "sneakers",
+        "loafers",
+        "sandals",
+        "shoes"
+      ]
+    },
+    "shoeType": {
+      "type": "enumeration",
+      "enum": [
+        "monkstrapshoes",
+        "derbyshoes",
+        "oxfordshoes",
+        "brogueshoes",
+        "trimloafers",
+        "tasselloafers",
+        "weaveloafers",
+        "saddleloafers",
+        "pennyloafers",
+        "anklestrap",
+        "crossstrap",
+        "espadrilles",
+        "sliderflipflop",
+        "boulevard",
+        "cuban",
+        "miami",
+        "valley",
+        "chelseaboots",
+        "cubanheelboots",
+        "hikingboots",
+        "laceupboots",
+        "zipboots"
+      ]
+    },
+    "discounted": {
+      "type": "boolean",
+      "default": false
+    },
+    "outlet": {
+      "type": "boolean",
+      "default": false
+    },
+    "collection": {
+      "type": "enumeration",
+      "enum": [
+        "Abbey",
+        "Alex",
+        "Arrow",
+        "Brooklyn",
+        "Campus",
+        "Capri",
+        "Club",
+        "Como",
+        "Florence",
+        "Graduate",
+        "Hornchurch",
+        "Hoxton",
+        "Jackson",
+        "Joey",
+        "Kensington",
+        "Oliver",
+        "Riva",
+        "Sean",
+        "Terry",
+        "Tino",
+        "Tommy",
+        "Verona",
+        "Woody"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "beige",
+        "black",
+        "blue/off white",
+        "off white",
+        "brown ",
+        "camel",
+        "grey",
+        "khaki",
+        "navy",
+        "pink",
+        "pink/off white",
+        "stone",
+        "taupe",
+        "white"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "maleproducts"
+    }
+  }
+}
